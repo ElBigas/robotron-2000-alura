@@ -2,7 +2,28 @@
 
 <h3>Projeto criado no decorrer do curso de JavaScript da Alura</h3>
 
-Foi um projeto bem simples, o seu HTML e CSS já estavam criados e pude aprender mais sobre manipulação de objetos com JavaScript. 
+Foi um projeto bem simples, o seu HTML e CSS já estavam criados e pude aprender mais sobre manipulação de objetos com JavaScript. Também tive ajuda na melhoria do código pela IA "chat.openai.com". Suas sugestões de melhoria foram:
+
+Eu sugiro simplificar a função de manipulação de dados para ficar mais claro e curto:
+
+```javascript
+function manipulaDados(operacao, controle) { 
+  const peca = controle.querySelector("[data-contador]"); 
+  peca.value = parseInt(peca.value) + (operacao === '+' ? 1 : -1); 
+}
+```
+
+Além disso, você pode usar o método Number em vez de parseInt para garantir que o resultado seja um número, mesmo que o valor do textContent não seja um número válido:
+
+```javascript
+function atualizaEstatisticas(peca) { 
+  estatisticas.forEach((elemento) => { 
+    elemento.textContent = Number(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]; 
+  }); 
+}
+```
+
+<hr>
 
 Este código define uma variável "controle", que seleciona todos os elementos HTML que possuem o atributo "data-controle". Depois, uma variável "estatísticas" seleciona todos os elementos HTML que possuem o atributo "data-estatística".
 
