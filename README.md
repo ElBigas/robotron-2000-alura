@@ -2,9 +2,9 @@
 
 <h3>Projeto criado no decorrer do curso de JavaScript da Alura</h3>
 
-Foi um projeto bem simples, o seu HTML e CSS já estavam criados e pude aprender mais sobre manipulação de objetos com JavaScript. Também tive ajuda na melhoria do código pela IA "chat.openai.com". Suas sugestões de melhoria foram:
+Foi um projeto bem simples, o seu HTML e CSS já estavam criados e pude aprender mais sobre manipulação de objetos com JavaScript. Também tive ajuda na melhoria do código pelo <a href="https://chat.openai.com/chat">ChatGPT</a>. Suas sugestões de melhoria foram:
 
-Eu sugiro simplificar a função de manipulação de dados para ficar mais claro e curto:
+"Eu sugiro simplificar a função de manipulação de dados para ficar mais claro e curto:"
 
 ```javascript
 function manipulaDados(operacao, controle) { 
@@ -13,7 +13,7 @@ function manipulaDados(operacao, controle) {
 }
 ```
 
-Além disso, você pode usar o método Number em vez de parseInt para garantir que o resultado seja um número, mesmo que o valor do textContent não seja um número válido:
+"Além disso, você pode usar o método Number em vez de parseInt para garantir que o resultado seja um número, mesmo que o valor do textContent não seja um número válido:"
 
 ```javascript
 function atualizaEstatisticas(peca) { 
